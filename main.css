@@ -1,0 +1,171 @@
+* {
+
+box-sizing: border-box;
+
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+@font-face {
+    font-family: 'BradleyHandITCBold';
+    src: url("css/Bradley/BradleyHandITCTTBold.ttf") format('truetype');
+    src: url("css/Bradley/BradleyHandITCTTBold.woff") format('woff');
+    }
+    .newfont
+    { font-family: 'BradleyHandITCBold' !important;
+    font-size : 31px;
+    }
+
+html, body {
+
+margin: 0;
+padding: 0;
+font-family: 'Montserrat', sans-serif;
+color: white;
+background-image: url('images/closeup.jpg') ;
+overflow: hidden;
+}
+
+
+#logo {
+/* 
+    opacity: 0.6;filter: alpha(opacity=40); */
+   width: 170px;
+}
+
+.landing {
+position: relative;
+background-image: url('images/closeup.jpg');
+background-size: cover;
+background-position: center;
+height: 100vh;
+}
+
+
+
+.landing-inner{
+position: absolute; 
+top:0;
+left: 0;
+width: 100%;
+height: 100%;
+background-image: linear-gradient(to right, #f591a0e7 , #8d64aacc, #fbb040a6
+);
+text-align: center;
+padding-top: 0px;
+}
+
+.landing-inner h1{
+font-family: 'BradleyHandITCBold' !important;
+font-size: 48px;
+padding: 0;
+margin: 0 0 35px;
+
+}
+
+.landing img {
+
+    width: 12%;
+}
+
+.landing-inner p {
+
+    font-size: 20px;
+    padding:0px;
+
+}
+.countdown div:nth-child(1) {
+    background-color: #fbb040; 
+    border: 6px solid #fbb040;          
+
+}
+
+.countdown {
+   
+    font-size:30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+}
+
+.countdown div{
+
+    padding: 20px;
+    border: 2px solid rgba(255, 255, 255, 0.76);
+    border-radius: 20px;
+    margin: 5px;
+    background: rgba(0, 0, 0, 0);
+
+}
+
+.countdown span{
+
+display: block;
+font-size: 25px;
+
+
+}
+
+
+
+
+#footer p{
+
+font-size: 10px;
+margin-top:60px;
+opacity: 0.5;
+}
+@media(max-width: 650px){
+
+.landing img {
+
+    width: 36%;
+}
+
+.landing h1 {
+
+font-size: 30px;
+
+
+}
+
+.landing p{
+
+    font-size: 15px;
+}
+
+.countdown {
+
+    font-size: 25px;
+    flex-direction: column;
+}
+
+.countdown div {
+    
+    display: none;
+}
+
+.countdown div:first-child {
+    display: block;
+    width: 70%;
+    padding: 5px;
+
+}
+
+.countdown div:nth-child(2) {
+    display: block;
+    width: 70%;
+    padding: 5px;
+
+}
+
+#footer p{
+margin-top:60px;
+
+font-size: 14px;
+
+opacity: 0.5;
+}
+}
